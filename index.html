@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+      <h1 id="title" class="text-center">Survey form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to complete this form</p>
+      </header>
+      
+      <form id="survey-form">
+      <div class="form-group">
+          <label id="name-label" for="name">
+        Name 
+        </label>
+        <input id="name" 
+               type="text" 
+               required 
+               placeholder="Enter your name"
+               name="name"
+               class="form-control">
+        </div>
+        
+        <div class="form-group">
+        <label id="email-label" for="email">
+        Email
+        </label>
+         <input id="email" 
+                type="email"
+                name="email"
+                required 
+                placeholder="Enter your email"
+                class="form-control">
+        </div>
+        <div class="form-group">
+        <label id="number-label" for="number">
+        Age
+        </label>
+         <input id="number"
+                type="number" 
+                name="age"
+                required 
+                class="form-control"
+                min="1" 
+                max="99" 
+                placeholder="Age">
+        </div>
+        
+      <div class="form-group">
+          <p>Which industry best defines your business?</p>
+        <select id="dropdown" name="business" class="form-control">
+          <option disabled selected value>Please select</option>
+          <option value="culture">Culture</option>
+          <option value="ecommerce">Ecommerce</option>
+          <option value="retail">Retail</option>
+          <option value="hospitality">Hospitality</option>
+          <option value="Wellness">Wellness</option>
+          <option value="EntertainmentLeisure">Entertainment/Leisure</option>
+          <option value="Information Technology">Information Technology</option>
+         </select>
+        </div>
+        
+        <div class="form-group">
+          <p>Is this your first website?</p>
+        <label>
+        <input 
+               name="first-website"
+               type="radio" 
+               value="yes"
+               class="input-radio"
+               checked>Yes</label>
+      <label>
+        <input name="first-website"
+               type="radio" 
+               value="no"
+               class="input-radio">
+      No</label>
+        </div>
+        
+       <div class="form-group">
+          <p>Which pages would you like your website to have?
+         <span class="clue">(Check all that apply)</span>
+         </p>
+        <label>
+        <input type="checkbox" 
+               value="home-page"
+               class="input-checkbox">
+           Home page
+         </label>
+       
+        
+        <label>
+        <input type="checkbox"
+               value="contact-page"
+               class="input-checkbox">
+          Contact us
+        </label>
+        
+        <label>
+        <input type="checkbox"
+               value="blog-page"
+               class="input-checkbox">
+          Blog
+        </label>
+        
+        <label>
+        <input type="checkbox"
+                value="gallery"
+               class="input-checkbox">
+          Gallery
+        </label>
+        
+         <label>
+        <input type="checkbox"
+                value="map"
+               class="input-checkbox">
+           Where to find us
+        </label>
+        </div>
+        
+       <div class="form-group">
+          <p>Special features</p>
+        <label>
+        <input type="checkbox"
+               value="facebook"
+               class="input-checkbox">
+          Blog install with WordPress, using commercial theme adopted for your site's look
+        </label>
+        
+        <label>
+        <input type="checkbox"
+               value="instagram"
+               class="input-checkbox">
+          Contact us form with PHP backend
+        </label>
+        
+        <label>
+        <input type="checkbox"
+               value="homepage-carousel"
+               class="input-checkbox">
+         Homepage Carousel
+        </label>
+        </div>
+        
+        
+       <div class="form-group">
+          <p>Extra features</p>
+        <label>
+        <input type="checkbox"
+               value="facebook"
+               class="input-checkbox">
+          Set up of Facebook page
+        </label>
+        
+        <label>
+        <input type="checkbox"
+               value="instagram"
+               class="input-checkbox">
+          Set up of Instagram page
+        </label>
+        
+        <label>
+        <input type="checkbox"
+               value="hosting"
+               class="input-checkbox">
+         Host your site
+        </label>
+        </div>
+        
+        <div class="form-group">
+        <p>Any additional comments?</p>
+        <textarea id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter additional comments">
+        </textarea>
+        </div>
+        
+        
+        <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+        </form>
+      </div>
+      
+  </body>
+</html>

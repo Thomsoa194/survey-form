@@ -4,7 +4,7 @@
   "description": "A survey from to provide feedback",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Thomsoa194/survey-form/issues"
   },
-  "homepage": "https://github.com/Thomsoa194/survey-form#readme"
+  "homepage": "https://github.com/Thomsoa194/survey-form#readme",
+  "dependencies": {
+    "webpack": "^4.44.1"
+  }
 }
